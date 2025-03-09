@@ -10,6 +10,7 @@ in some of today's most complex Node.js systems in the real-world.
 Topics covered so far:
 
 - layered (N-tier) architecture
+- hexagonal architecture in practice #1 [#dee7a18](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/dee7a18)
 - more to come...
 
 ## Project setup
