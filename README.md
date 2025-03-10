@@ -11,6 +11,11 @@ Topics covered so far:
 
 - layered (N-tier) architecture
 - hexagonal architecture in practice #1 [#dee7a18](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/dee7a18)
+- hexagonal architecture in practice #2 [#8870700](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/8870700)
+  - > ^ [#8870700](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/8870700) is a simple application that allows to create and fetch alarms, but **this application is much more than that**. Infrastructure
+    > was decoupled from the application layer using the modules composition pattern. Now we can simply switch between different
+    > infrastructure implementation without having to change the application layer itself. In this particular case we simply
+    > switch between an in-memory database and a Postgres database via TypeORM.
 - more to come...
 
 ## Project setup
