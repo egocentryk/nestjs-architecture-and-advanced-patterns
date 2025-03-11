@@ -6,9 +6,16 @@ import { AppService } from './app.service'
 import { ApplicationBootstrapOptions } from './common/interfaces/application-bootstrap-options.interface'
 import { CoreModule } from './core/core.module'
 import { CqrsModule } from '@nestjs/cqrs'
+import { DevtoolsModule } from '@nestjs/devtools-integration'
 
 @Module({
-  imports: [CoreModule, CqrsModule.forRoot()],
+  imports: [
+    CoreModule,
+    CqrsModule.forRoot(),
+    DevtoolsModule.register({
+      http: process.env.NODE_ENV !== 'production',
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
