@@ -19,6 +19,10 @@ Topics covered so far:
 - experimenting with CQRS #1 [#590a7b0](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/590a7b0)
 - more to come...
 
+## Project Modules Graph
+
+![](public/modules_graph.png)
+
 ## Project setup
 
 ```bash
