@@ -16,6 +16,7 @@ Topics covered so far:
     > was decoupled from the application layer using the modules composition pattern. Now we can simply switch between different
     > infrastructure implementation without having to change the application layer itself. In this particular case we simply
     > switch between an in-memory database and a Postgres database via TypeORM.
+- experimenting with CQRS #1 [#590a7b0](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/590a7b0)
 - more to come...
 
 ## Project setup
