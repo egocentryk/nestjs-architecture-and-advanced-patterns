@@ -20,6 +20,9 @@ Topics covered so far:
 - experimenting with CQRS #2 [#a3c0349](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/a3c0349)
 - experimenting with CQRS #3 [#55d7ed1](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/55d7ed1)
   - > ^ [#55d7ed1](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/55d7ed1) this is really huge PR, but we've implemented the READ side of the CQRS pattern using MongoDB, so now application uses two different data stores (**PostgreSQL for WRITE and MongoDB for READ**). Upon receiving an event, system automatically creates a **denormalized alarm view** and stores it in the READ side database.
+  - `docker-compose down --remove-orphans` & `docker-compose up -d`
+  - `curl --location --request POST 'localhost:3000/alarms' \ --header 'Content-Type: application/json' \ --data-raw '{ "name": "Alarm 1", "severity": "HIGH", "triggeredAt": "2021-01-01T00:00:00.000Z", "items": [{ "name": "Item 1", "type": "TYPE_1" }, { "name": "Item 2", "type": "TYPE_2" }] }' | json_pp`
+  - `curl http://localhost:3000/alarms | json_pp`
 - more to come...
 
 ## Project Modules Graph
