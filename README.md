@@ -18,6 +18,8 @@ Topics covered so far:
     > switch between an in-memory database and a Postgres database via TypeORM.
 - experimenting with CQRS #1 [#590a7b0](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/590a7b0)
 - experimenting with CQRS #2 [#a3c0349](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/a3c0349)
+- experimenting with CQRS #3 [#55d7ed1](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/55d7ed1)
+  - > ^ [#55d7ed1](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/55d7ed1) this is really huge PR, but we've implemented the READ side of the CQRS pattern using MongoDB, so now application uses two different data stores (**PostgreSQL for WRITE and MongoDB for READ**). Upon receiving an event, system automatically creates a **denormalized alarm view** and stores it in the READ side database.
 - more to come...
 
 ## Project Modules Graph
