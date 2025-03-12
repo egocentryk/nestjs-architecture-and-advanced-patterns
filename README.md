@@ -25,7 +25,7 @@ Topics covered so far:
   - `curl http://localhost:3000/alarms | json_pp`
 - more to come...
 
-## Project Modules Graph
+## Project Graph [Modules]
 
 ![](public/modules_graph.png)
 
