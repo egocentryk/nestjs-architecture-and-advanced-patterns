@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { ApplicationBootstrapOptions } from '../common/interfaces/application-bootstrap-options.interface'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { configSchema } from 'src/config.schema'
+import { MongooseModule } from '@nestjs/mongoose'
 
 @Module({})
 export class CoreModule {
@@ -32,6 +33,7 @@ export class CoreModule {
               }),
               inject: [ConfigService],
             }),
+            MongooseModule.forRoot('mongodb://localhost:27017/vf-read-db'),
           ]
         : []),
     ]
