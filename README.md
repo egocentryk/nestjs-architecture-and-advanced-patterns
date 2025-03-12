@@ -17,6 +17,7 @@ Topics covered so far:
     > infrastructure implementation without having to change the application layer itself. In this particular case we simply
     > switch between an in-memory database and a Postgres database via TypeORM.
 - experimenting with CQRS #1 [#590a7b0](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/590a7b0)
+- experimenting with CQRS #2 [#a3c0349](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/a3c0349)
 - more to come...
 
 ## Project Modules Graph
