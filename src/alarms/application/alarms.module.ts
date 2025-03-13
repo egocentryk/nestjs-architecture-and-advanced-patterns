@@ -5,6 +5,9 @@ import { AlarmsService } from './alarms.service'
 import { CreateAlarmCommandHandler } from './commands/create-alarm.command-handler'
 import { GetAlarmsQueryHandler } from './queries/get-alarms.query-handler'
 import { AlarmCreatedEventHandler } from './event-handlers/alarm-created.event-handler'
+import { AlarmAcknowledgedEventHandler } from './event-handlers/alarm-acknowledged.event-handler'
+import { AcknowledgeAlarmCommandHandler } from './commands/acknowledge-alarm.command-handler'
+import { CqrsModule } from '@nestjs/cqrs'
 
 @Module({
   controllers: [AlarmsController],
@@ -14,11 +17,12 @@ import { AlarmCreatedEventHandler } from './event-handlers/alarm-created.event-h
     CreateAlarmCommandHandler,
     GetAlarmsQueryHandler,
     AlarmCreatedEventHandler,
+    AcknowledgeAlarmCommandHandler,
+    AlarmAcknowledgedEventHandler,
   ],
 })
 export class AlarmsModule {
   static withInfrastucture(infrastructureModule: Type | DynamicModule) {
-    // 👈 new static method
     return {
       module: AlarmsModule,
       imports: [infrastructureModule],
