@@ -27,6 +27,7 @@ Topics covered so far:
   - `docker-compose up -d event-store`
 - implementing Event Store #2 [#3d7e2fa](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/3d7e2fa)
 - autowire event classes [#e6752bd](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/e6752bd)
+- rehydrating aggregates [#a050a74](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/a050a74)
 - more to come...
 
 ## Project Graph [Modules]
