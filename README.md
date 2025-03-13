@@ -23,6 +23,8 @@ Topics covered so far:
   - `docker-compose down --remove-orphans` & `docker-compose up -d`
   - `curl --location --request POST 'localhost:3000/alarms' \ --header 'Content-Type: application/json' \ --data-raw '{ "name": "Alarm 1", "severity": "HIGH", "triggeredAt": "2021-01-01T00:00:00.000Z", "items": [{ "name": "Item 1", "type": "TYPE_1" }, { "name": "Item 2", "type": "TYPE_2" }] }' | json_pp`
   - `curl http://localhost:3000/alarms | json_pp`
+- implementing Event Store #1 [#d5a905b](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/d5a905b)
+  - `docker-compose up -d event-store`
 - more to come...
 
 ## Project Graph [Modules]
