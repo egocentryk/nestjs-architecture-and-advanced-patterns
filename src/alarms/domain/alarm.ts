@@ -1,7 +1,9 @@
+import { AutowiredEvent } from '../../shared/decorators/autowired-event.decorator'
 import { VersionedAggregateRoot } from '../../shared/domain/aggregate-root'
 import { AlarmItem } from './alarm-item'
 import { AlarmSeverity } from './value-objects/alarm-severity'
 
+@AutowiredEvent
 export class Alarm extends VersionedAggregateRoot {
   public name: string
   public severity: AlarmSeverity
