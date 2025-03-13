@@ -25,6 +25,7 @@ Topics covered so far:
   - `curl http://localhost:3000/alarms | json_pp`
 - implementing Event Store #1 [#d5a905b](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/d5a905b)
   - `docker-compose up -d event-store`
+- implementing Event Store #2 [#3d7e2fa](https://github.com/egocentryk/nestjs-architecture-and-advanced-patterns/commit/3d7e2fa)
 - more to come...
 
 ## Project Graph [Modules]
