@@ -4,8 +4,16 @@ import { ApplicationBootstrapOptions } from '../common/interfaces/application-bo
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { configSchema } from 'src/config.schema'
 import { MongooseModule } from '@nestjs/mongoose'
+import { EVENT_STORE_CONNECTION } from './core.constants'
 
-@Module({})
+@Module({
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost:27018/vf-event-store', {
+      connectionName: EVENT_STORE_CONNECTION,
+      directConnection: true,
+    }),
+  ],
+})
 export class CoreModule {
   static forRoot(options: ApplicationBootstrapOptions) {
     const imports = [

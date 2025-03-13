@@ -7,6 +7,7 @@ import { ApplicationBootstrapOptions } from './common/interfaces/application-boo
 import { CoreModule } from './core/core.module'
 import { CqrsModule } from '@nestjs/cqrs'
 import { DevtoolsModule } from '@nestjs/devtools-integration'
+import { SharedModule } from './shared/shared.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { DevtoolsModule } from '@nestjs/devtools-integration'
     DevtoolsModule.register({
       http: process.env.NODE_ENV !== 'production',
     }),
+    SharedModule,
   ],
   controllers: [AppController],
   providers: [AppService],
